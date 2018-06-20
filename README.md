@@ -4,7 +4,8 @@ eng:
 1. Given a binary tree, the values in it are numbers.
 You need to write a function that returns the sum of all the nodes in the tree,
 who do not have descendants.
-For example, for a tree
+For example, for a tree:
+```swift
      5
     / \
   4   2
@@ -12,13 +13,15 @@ For example, for a tree
 1   6   3
          /
        7
+```
 The result is 14 (1 + 6 + 7).
 
 ru:
 1. Дано бинарное дерево, значения в нем - числа.
 Нужно написать функцию, которая возвращает сумму всех узлов дерева,
 у которых нет потомков.
-Например, для дерева
+Например, для дерева:
+```swift
      5
     / \
   4   2
@@ -26,10 +29,11 @@ ru:
 1   6   3
          /
        7
+```
 Результатом будет число 14 (1 + 6 + 7).
 
 # Swift code
-
+```swift
 struct Point {
     var value: Int
     var points: [Point]
@@ -60,6 +64,6 @@ let point5 = Point(value: 5, points: [point4, point2])
 
 let result = sumBinTree(point: point5)
 print(result)
-
+```
 
 
